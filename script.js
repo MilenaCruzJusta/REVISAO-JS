@@ -59,7 +59,7 @@ console.log(fraseComBatata.includes("comer"));
 console.log("E agora, tem a palavra batata?")
 console.log(fraseComBatata.includes("batata"));
 
-Exercicio 6*/
+Exercicio 6
 
 const lista = ["batata","cenoura","beterraba"]
 console.log(lista)
@@ -72,6 +72,23 @@ console.log("Tem cenoura?")
 console.log(lista.includes("cenoura"))
 lista.splice(1,1)
 console.log(`Removendo item do índice 1: ${lista}`)
+
+Exercicio 7*/
+let arrayNum=[4,32,56,9,12]
+console.log(arrayNum)
+
+function divNumList(arrayNum){
+    let primeiroNum = arrayNum[0]/2;
+    let ultimoNum = arrayNum[arrayNum.length-1]/2;
+    arrayNum[0] = primeiroNum;
+    arrayNum[arrayNum.length - 1] = ultimoNum;
+    return divNumList
+}
+console.log(arrayNum)
+
+
+    
+
 
 
 
