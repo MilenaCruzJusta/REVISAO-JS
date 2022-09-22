@@ -40,4 +40,39 @@ let coraçãoUsuario = prompt("Você tem algum problema cardíaco? Digite S/N")
     console.log ("Ops, você não pode entrar, continue se divertindo em outro brinquedo.")
     }
 
-    Exercicio 5*/
+    Exercicio 5
+
+    let frase = "Hoje eu vou comer cenoura, ebaaaa!";
+
+console.log(frase, `Essa é uma frase com ${frase.length} caracteres.`);
+console.log(`Retirando os espaços do início e do fim: '${frase.trim()}' ainda tem ${frase.length} letras.`);
+console.log(`Minúscula fica assim: '${frase.toLowerCase()}'`);
+console.log("Tem a palavra comer?")
+console.log(frase.includes("comer")); 
+console.log("Tem a palavra batata?")
+console.log(frase.includes("batata")); 
+
+const fraseComBatata = frase.replaceAll("cenoura","batata")
+console.log(`Nós podemos mudar e dizer: '${fraseComBatata}'`)
+console.log("E agora, tem a palavra comer?")
+console.log(fraseComBatata.includes("comer")); 
+console.log("E agora, tem a palavra batata?")
+console.log(fraseComBatata.includes("batata"));
+
+Exercicio 6*/
+
+const lista = ["batata","cenoura","beterraba"]
+console.log(lista)
+console.log(`O segundo nome da lista é ${lista[1]}`)
+console.log(`O tamanho da lista é ${lista.length}`)
+lista.push("mandioca")
+console.log(`Adicionando mandioca, o tamanho da lista agora é ${lista.length}`)
+console.log(lista)
+console.log("Tem cenoura?")
+console.log(lista.includes("cenoura"))
+lista.splice(1,1)
+console.log(`Removendo item do índice 1: ${lista}`)
+
+
+
+
