@@ -73,23 +73,99 @@ console.log(lista.includes("cenoura"))
 lista.splice(1,1)
 console.log(`Removendo item do índice 1: ${lista}`)
 
-Exercicio 7*/
-let arrayNum=[4,32,56,9,12]
-console.log(arrayNum)
+Exercicio 7
+const array = [4,32,56,9,12]
 
-function divNumList(arrayNum){
-    let primeiroNum = arrayNum[0]/2;
-    let ultimoNum = arrayNum[arrayNum.length-1]/2;
-    arrayNum[0] = primeiroNum;
-    arrayNum[arrayNum.length - 1] = ultimoNum;
-    return divNumList
+function divitens (arrayDeNumeros){
+const primeiro = arrayDeNumeros[0] / 2
+const ultimo = arrayDeNumeros[arrayDeNumeros.length-1] / 2
+
+arrayDeNumeros[0] = primeiro
+arrayDeNumeros[arrayDeNumeros.length-1] = ultimo
+
+return arrayDeNumeros
 }
-console.log(arrayNum)
 
+console.log(divitens(array))
 
+let divitens2 = function(arrayDeNumeros){
+    const primeiro = arrayDeNumeros[0] / 2
+    const ultimo = arrayDeNumeros[arrayDeNumeros.length-1] / 2
+
+    primeiroItem = arrayDeNumeros[0]
+    ultimoItem = arrayDeNumeros[arrayDeNumeros.length-1]
     
+return arrayDeNumeros
+}
+console.log(divitens2(array))
 
+let divitens3 = (arrayDeNumeros)=>{
+    const primeiro = arrayDeNumeros[0] / 2
+    const ultimo = arrayDeNumeros[arrayDeNumeros.length-1] / 2
 
+    primeiroItem = arrayDeNumeros[0]
+    ultimoItem = arrayDeNumeros[arrayDeNumeros.length-1]  
+    
+    return arrayDeNumeros
+}
+console.log(divitens3(array))
 
+Exercicio 8
+const iniciante = {
+    nome: "Milena Cruz Justa",
+    idade: 36,
+    generoMusicalPreferido: "rocknroll"
+}
 
+console.log(`O nome da pessoa é ${iniciante.nome}, ela tem ${iniciante.idade}, anos e gosta muito de ${iniciante.generoMusicalPreferido}.`)
 
+const iniciante2 = {
+    ... iniciante,
+    nome: "Michelle Teixeira Alves",
+    idade: 36,
+    generoMusicalPreferido: "rocknroll"
+}
+
+console.log(`O nome da pessoa é ${iniciante2.nome}, ela tem ${iniciante2.idade}, anos e gosta muito de ${iniciante2.generoMusicalPreferido}.`)
+
+Exercicio 9
+let numeroUsuario = prompt("Digite aqui um número qualquer")
+
+if(numeroUsuario % 2 === 0){
+    console.log("É par")
+}else{
+    console.log("É impar")
+}
+
+Exercicio 10
+let bichinho = prompt("Digite aqui o nome de um bichinho".toLowerCase())
+switch (bichinho){
+    case 'cachorro':
+        console.log("Au au")
+        break
+    case 'gato':
+        console.log("Miau")
+        break
+    case 'vaca':
+        console.log("Muuu")
+        break
+    defalt:        
+    console.log("sem barulho reconhecido :(")
+    break
+}
+
+let animal = prompt("Digite aqui o nome de um bichinho".toLowerCase())
+
+if(animal === "cachorro"){
+console.log("Au au")
+
+}if(animal === "gato"){
+console.log("Miau")
+
+}if(animal === "vaca"){
+console.log("Muuu")            
+} else {
+console.log("sem barulho reconhecido :(")
+}
+
+Exercicio 11*/
